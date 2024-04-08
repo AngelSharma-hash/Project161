@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+        <script src="./ball.js"></script>
+    </head>
+    <body>
+        <a-scene id="scene">
+
+            <a-entity
+            id="camera"
+            camera
+            position="0 1.6 8"
+            wasd-controls
+            look-controls="pointerLockEnabled: false"        
+            >
+                <a-cursor></a-cursor>        
+            </a-entity>
+
+            <a-entity balls></a-entity>
+
+            <a-plane position="0 0 0" rotation="-90 0 0" height="200" width="200" id="bowling hall" color="green" static-body></a-plane>
+            <a-box position="0 2.5 -10" src="./png-clipart-bowling-pin-ten-pin-bowling-bowling-balls-bowling-orange-sports.png" depth="0.1" height="5" width="2.5"></a-box>
+            <a-box position="2.5 2.5 -13" src="./png-clipart-bowling-pin-ten-pin-bowling-bowling-balls-bowling-orange-sports.png" depth="0.1" height="5" width="2.5"></a-box>
+            <a-box position="-2.5 2.5 -13" src="./png-clipart-bowling-pin-ten-pin-bowling-bowling-balls-bowling-orange-sports.png" depth="0.1" height="5" width="2.5"></a-box>
+            <a-box position="-5 2.5 -15" src="./png-clipart-bowling-pin-ten-pin-bowling-bowling-balls-bowling-orange-sports.png" depth="0.1" height="5" width="2.5"></a-box>
+            <a-box position="5 2.5 -15" src="./png-clipart-bowling-pin-ten-pin-bowling-bowling-balls-bowling-orange-sports.png" depth="0.1" height="5" width="2.5"></a-box>
+        </a-scene>
+
+    </body>
+</html>
